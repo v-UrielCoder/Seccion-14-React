@@ -4,10 +4,10 @@ import { getHeroById } from '../helpers';
 
 export const HeroPage = () => {
 
-  const { id } = useParams();
+  const { heroId } = useParams();
   const navigate = useNavigate()
 
-  const hero = useMemo( () => getHeroById( id ), [ id ]);
+  const hero = useMemo( () => getHeroById( heroId ), [ heroId ]);
 
   const onNavigateBack = () => {
 
@@ -35,7 +35,7 @@ export const HeroPage = () => {
 
       <div className="col-4">
         <img 
-          src={ `/assets/heroes/${id}.jpg` } 
+          src={ `/assets/heroes/${heroId}.jpg` } 
           alt={hero.superhero}
           className='img-thumbnail ' 
         />
