@@ -5,7 +5,7 @@ import { PublicRoute } from "../../src/router/PublicRoute"
 
 describe('pruebas en PublicRoute', () => {
 
-  test('debe de mostrat el children si no esta autenticado', () => {
+  test('debe de mostrar el children si no esta autenticado', () => {
 
     const contextValue = {
       logged: false
